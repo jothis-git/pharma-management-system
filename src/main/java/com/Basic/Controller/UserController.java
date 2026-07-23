@@ -24,11 +24,11 @@ public class UserController {
 		
 		this.userService = userService;
 	}
-	@PostMapping("/addUser")
+	@PostMapping()
 	public String addUser(@RequestBody CreateUserRequest request) {
 		return userService.addUser(request);
 	}
-	@GetMapping("/view")
+	@GetMapping()
 	public ResponseEntity<List<UserResponse>> getAllUsers(){
 		List<UserResponse> users = userService.viewUsers();
 		return ResponseEntity.ok(users);
