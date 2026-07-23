@@ -8,7 +8,7 @@ import com.Basic.Entities.order;
 
 public interface OrderRepository extends JpaRepository<order, Integer>{
 
-	List<order> findByUser_userId(Integer userId);
+	List<order> findByUser_product_id(Integer userId);
 	
 
 }
