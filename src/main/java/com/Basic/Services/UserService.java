@@ -2,6 +2,7 @@ package com.Basic.Services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -41,6 +42,10 @@ public class UserService {
 		}
 		
 		return responseList;
+	}
+	
+	public Optional<User> findByEmail(String email) {
+		return userRepo.findByEmail(email);
 	}
 
 
