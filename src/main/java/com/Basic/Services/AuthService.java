@@ -9,6 +9,6 @@ public class AuthService {
 
     public String login(LoginRequest request) {
 
-        return "JWT_TOKEN";
+        return "ENABLED";
     }
 }
