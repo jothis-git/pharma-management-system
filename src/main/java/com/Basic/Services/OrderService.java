@@ -81,7 +81,7 @@ public class OrderService {
 
 
 	public List<OrderResponse> view(Integer userId) {
-		List<order> orders = orderRepo.findByUser_userId(userId);
+		List<order> orders = orderRepo.findByUser_product_id(userId);
 		List<OrderResponse> responseList = new ArrayList<>();
 		for(order list : orders) {
 			
