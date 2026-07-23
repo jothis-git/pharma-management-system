@@ -44,9 +44,7 @@ public class UserService {
 		return responseList;
 	}
 	
-	public Optional<User> findByEmail(String email) {
-		return userRepo.findByEmail(email);
-	}
+	
 
 
 }
